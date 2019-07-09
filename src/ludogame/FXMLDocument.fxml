@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ludoFrame" prefHeight="760.0" prefWidth="1000.0" style="-fx-border-color: gold; -fx-background-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ludogame.FXMLDocumentController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.7565130260521042" layoutX="23.0" layoutY="10.0" prefHeight="750.0" prefWidth="977.0" style="-fx-background-color: gold;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="743.0" prefWidth="722.0" style="-fx-background-color: black; -fx-border-color: black; -fx-border-width: 5;" stylesheets="@ludoStyle.css">
+               <children>
+                  <Group layoutX="302.0" layoutY="4.0">
+                     <children>
+                        <Button fx:id="box11" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red11">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box12" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red12">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box13" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="13">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box10" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red10">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box14" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: red; -fx-background-color: red;" text="14">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box09" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red9">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enR14" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: red;" text="red14">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box15" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="15">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box08" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="51.0" style="-fx-border-color: black; -fx-background-color: white;" text="red8">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enR15" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: red;" text="red15">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box16" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="16">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box06" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="52.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red6">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box18" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="246.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="18">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box07" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="red7">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enR16" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: red;" text="red16">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box17" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="17">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enR17" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="51.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: red;" text="red17">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="enR13" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: red;" text="red13">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutX="524.0" layoutY="226.0" rotate="90.0">
+                     <children>
+                        <Button fx:id="box24" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="4.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre24">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box26" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="95.0" layoutY="4.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="26">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box25" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="46.0" layoutY="4.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre25">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box23" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-2.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre23">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box22" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-2.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre22">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box28" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="28">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enG30" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="gre30">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="box21" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-2.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre21">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enG28" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="gre28">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box29" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="29">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box19" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-2.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre19">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box31" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="31">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box20" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-2.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="gre20">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enG29" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="gre29">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box30" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="30">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enG26" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="gre26">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box27" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="27">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enG27" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileG" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: green;" text="gre27">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutX="80.0" layoutY="226.0" rotate="90.0">
+                     <children>
+                        <Button fx:id="box51" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="247.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="51">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box05" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="1.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="5">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enB56" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="1.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="56">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enB52" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="197.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="52">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box45" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="1.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="45">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box04" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="4">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enB55" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="55">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box46" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="46">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box03" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="3">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enB54" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="54">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box47" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="47">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box02" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="2">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enB53" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="53">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box48" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="48">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box50" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="246.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="51.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="50">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box49" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="49">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box01" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="197.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: blue;" text="1">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="box52" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="247.0" mnemonicParsing="false" onAction="#moveTileR" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="52">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutX="302.0" layoutY="448.0">
+                     <children>
+                        <Button fx:id="box44" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="44">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enY43" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="yel43">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box32" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel32">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box43" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="49.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="43">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enY42" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="yel42">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box33" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="49.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel33">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box42" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="98.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="42">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enY41" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="yel41">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box34" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="98.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel34">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box41" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="147.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="41">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enY40" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="yel40">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box35" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="147.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel35">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box39" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="245.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="39">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box38" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel38">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box37" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="245.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel37">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box40" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="196.0" mnemonicParsing="false" onAction="#moveTile" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="40">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="enY39" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="49.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="yel39">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="box36" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="196.0" mnemonicParsing="false" onAction="#moveTileY" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: black; -fx-background-color: white;" text="yel36">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Button fx:id="box00" layoutX="307.0" layoutY="306.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="137.0" style="-fx-background-color: gold;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Pane layoutX="450.0" layoutY="4.0" prefHeight="298.0" prefWidth="292.0" style="-fx-background-color: red; -fx-border-color: black;">
+                     <children>
+                        <Pane layoutX="45.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <Button fx:id="homeRT1" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="122.0" mnemonicParsing="false" onAction="#moveRT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: red;" text="homeRT1">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeRT3" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="32.0" mnemonicParsing="false" onAction="#moveRT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: red;" text="homeRT3">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeRT4" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="122.0" mnemonicParsing="false" onAction="#moveRT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: red;" text="homeRT4">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeRT2" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="32.0" mnemonicParsing="false" onAction="#moveRT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: red;" text="homeRT2">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="5.0" layoutY="5.0" prefHeight="298.0" prefWidth="297.0" style="-fx-background-color: blue; -fx-border-color: black;">
+                     <children>
+                        <Pane layoutX="41.0" layoutY="49.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <Button fx:id="homeBT1" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveBT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: blue;" text="homeBT1">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeBT3" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="118.0" mnemonicParsing="false" onAction="#moveBT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: blue;" text="homeBT3">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeBT4" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveBT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: blue;" text="homeBT4">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeBT2" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="118.0" mnemonicParsing="false" onAction="#moveBT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: blue;" text="homeBT2">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="6.0" layoutY="449.0" prefHeight="289.0" prefWidth="297.0" style="-fx-background-color: yellow; -fx-border-color: black;">
+                     <children>
+                        <Pane layoutX="49.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <Button fx:id="homeYT1" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveYT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: yellow;" text="homeYT1">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeYT3" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="121.0" mnemonicParsing="false" onAction="#moveYT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: yellow;" text="homeYT3">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeYT4" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="121.0" mnemonicParsing="false" onAction="#moveYT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: yellow;" text="homeYT4">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeYT2" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveYT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: yellow;" text="homeYT2">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="449.0" layoutY="449.0" prefHeight="296.0" prefWidth="292.0" style="-fx-background-color: green; -fx-border-color: black;">
+                     <children>
+                        <Pane layoutX="45.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <Button fx:id="homeGT1" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveGT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: green;" text="homeGT1">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeGT3" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="25.0" mnemonicParsing="false" onAction="#moveGT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: green;" text="homeGT3">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeGT4" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="118.0" mnemonicParsing="false" onAction="#moveGT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: green;" text="homeGT4">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="homeGT2" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="118.0" mnemonicParsing="false" onAction="#moveGT" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: green;" text="homeGT2">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Box layoutX="372.0" layoutY="345.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="139.0" layoutX="307.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="139.0" layoutX="351.0" layoutY="262.0" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="139.0" layoutX="394.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="88.0" layoutX="374.0" layoutY="375.0" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                  <ImageView fitHeight="124.0" fitWidth="118.0" layoutX="317.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/LudoFace.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+               <children>
+                  <Button fx:id="playerOne" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="231.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;" />
+                  <Label fx:id="p1Lab" layoutX="41.0" layoutY="248.0" prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: 5;" text="PLAYER  1 :" textFill="BLUE" wrapText="true">
+                     <font>
+                        <Font name="BatmanForeverAlternate" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="playerTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="289.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;" />
+                  <Label fx:id="p2Lab" layoutX="41.0" layoutY="306.0" prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: 5;" text="PLAYER 2 :" textFill="RED" wrapText="true">
+                     <font>
+                        <Font name="BatmanForeverAlternate" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="playerThree" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="345.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;" />
+                  <Button fx:id="playerFour" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="402.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;" />
+                  <Label fx:id="p4Lab" layoutX="41.0" layoutY="419.0" prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: 5;" text="PLAYER 4 :" textFill="#00f300" wrapText="true">
+                     <font>
+                        <Font name="BatmanForeverAlternate" size="15.0" />
+                     </font></Label>
+                  <Pane layoutX="4.0" layoutY="3.0" prefHeight="216.0" prefWidth="231.0" style="-fx-background-color: white; -fx-border-color: gold; -fx-border-width: 5;" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <RadioButton fx:id="twoPlayers" contentDisplay="RIGHT" layoutX="22.0" layoutY="39.0" mnemonicParsing="false" onAction="#players" prefHeight="25.0" prefWidth="137.0" text="2 Players" textFill="GREEN">
+                           <font>
+                              <Font name="Trajan" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="threePlayers" contentDisplay="RIGHT" layoutX="22.0" layoutY="78.0" mnemonicParsing="false" onAction="#players" prefHeight="27.0" prefWidth="137.0" text="3 Players" textFill="ORANGE">
+                           <font>
+                              <Font name="Trajan" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="fourPlayers" contentDisplay="RIGHT" layoutX="22.0" layoutY="116.0" mnemonicParsing="false" onAction="#players" prefHeight="27.0" prefWidth="137.0" text="4 Players" textFill="PURPLE">
+                           <font>
+                              <Font name="Trajan" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="-1.0" prefHeight="35.0" prefWidth="218.0" text="Select number of players" textFill="BLUE">
+                           <font>
+                              <Font name="Serif Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="resetBut" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="76.0" layoutY="162.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: gold; -fx-border-color: Orange;" text="RESET" textFill="RED">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="RED" spread="0.48" />
+                     </effect>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutY="716.0" prefHeight="27.0" prefWidth="240.0" style="-fx-background-color: white;" text="YUKEN AUTOMATIONS" textFill="BLUE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Palatino Linotype" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p3Lab" layoutX="41.0" layoutY="362.0" prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: 5;" text="PLAYER 3 :" textFill="YELLOW" wrapText="true">
+                     <font>
+                        <Font name="BatmanForeverAlternate" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="rollBut" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="56.0" layoutY="632.0" mnemonicParsing="false" onAction="#genRandNo" prefHeight="67.0" prefWidth="118.0" style="-fx-background-color: gold; -fx-border-width: 2; -fx-border-color: red;" text="ROLL" textFill="RED">
+                     <font>
+                        <Font name="AngryBirds Regular" size="29.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="BROWN" height="44.72" radius="24.825" spread="0.6" width="56.58" />
+                     </effect></Button>
+                  <TextField fx:id="rollSpace1" alignment="CENTER" editable="false" layoutX="35.0" layoutY="530.0" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: #FFFFC8; -fx-border-color: black;">
+                     <font>
+                        <Font name="AngryBirds Regular" size="28.0" />
+                     </font></TextField>
+                  <TextField fx:id="rollSpace2" alignment="CENTER" editable="false" layoutX="150.0" layoutY="529.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #FFFFC8; -fx-border-color: black;">
+                     <font>
+                        <Font name="AngryBirds Regular" size="28.0" />
+                     </font></TextField>
+                  <Label fx:id="note" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="2.0" layoutY="593.0" prefHeight="25.0" prefWidth="238.0" textFill="#00fffa">
+                     <font>
+                        <Font name="Sylfaen" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="winOne" layoutX="209.0" layoutY="248.0" prefHeight="17.0" prefWidth="21.0" style="-fx-background-color: black;" />
+                  <Label fx:id="winFour" layoutX="209.0" layoutY="419.0" prefHeight="17.0" prefWidth="21.0" style="-fx-background-color: black;" />
+                  <Label fx:id="winThree" layoutX="209.0" layoutY="363.0" prefHeight="17.0" prefWidth="21.0" style="-fx-background-color: black;" />
+                  <Label fx:id="winTwo" layoutX="209.0" layoutY="306.0" prefHeight="17.0" prefWidth="21.0" style="-fx-background-color: black;" />
+                  <Button fx:id="escapeBut" layoutX="190.0" layoutY="650.0" mnemonicParsing="false" onAction="#escape" prefHeight="25.0" prefWidth="37.0" style="-fx-background-color: BLUE;" text="ESC" textFill="YELLOW">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
